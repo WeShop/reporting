@@ -7,6 +7,10 @@ gem 'rails', '3.0.3'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+gem "awesome_print", :require => "ap"
+gem "interactive_editor"
+gem "wirble"
+gem 'hirb'
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -29,3 +33,26 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+group :development do
+  gem 'ruby-debug19', :require=>'ruby-debug'
+  gem 'factory_girl_rails'
+  gem "metrical"
+  gem "pickler"
+  gem "rspec-rails"
+end
+
+
+group :test do
+  gem 'ruby-debug19', :require=>'ruby-debug'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'factory_girl_rails'
+  gem 'pickle'
+  gem 'vcr'
+  gem "webmock"
+  gem "rspec-rails"
+  gem "timecop"
+end
